@@ -1,0 +1,18 @@
+docker pull mysql:8.0.30 -> crear imagen mysql
+docker images -> ver imagenes
+
+docker run --name mysql-enyoi -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=bdenyoi -e MYSQL_USER=david -e MYSQL_PASSWORD=root -p 3306:3306 -d mysql:8.0.30 -> crear contenedor en la misma red de la imagen
+docker ps -> ver contenedores
+docker exec -it (3 primeras letras del container_id) bash -> para acceder al contenedor de mysql
+--comandos mysql--
+mysql -u(usuario) -p(clave) -> conectarse a la base de datos
+show databases; -> ver base de datos
+use (nombrebasededatos)
+--fin comandos mysql--
+
+**Importante
+debe generarse el jar de la aplicacion
+crear Dockerfile
+
+docker build -t nombreimagen . -> generar imagen a base de la compilacion del jar de la app
+docker run --network nombrenetwork --name nombrecontainer -p 8080:8080 -d nombreimagen -> generar y ejecutar contenedor de la aplicacion dentro de la misma red basado en la imagen de la app
