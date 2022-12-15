@@ -22,8 +22,8 @@ docker pull mysql
 ## 3. Instalar e iniciar contenedor: 
 procedemos a instalar el contenedor
 
-  1- descargamos los scripts con los que se crean los contenedores con las bases de datos desde el enlace donde estara el repositorio con las instrucciones({Creacion Contenedor Docker} --> http), en    este caso solo usaremos el que se llama mysqlV1.yml
-  
+  1- descargamos los scripts con los que se crean los contenedores con las bases de datos desde el enlace donde estara el repositorio con las instrucciones({Creacion Contenedor Docker} --> https://github.com/DDavidGalP/repositorio-Creacion.git)
+    
   2- Deben seguir las indicaciones del archivo para crear el contenedor y dicha base de Datos
 
 ## 4. Ejecutar API
